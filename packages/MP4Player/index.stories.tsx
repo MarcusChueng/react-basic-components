@@ -1,0 +1,23 @@
+/*
+ * @Description: 
+ * @version: 
+ * @Author: MarcusCheung
+ * @Date: 2022-04-25 17:36:03
+ * @LastEditors: MarcusCheung
+ * @LastEditTime: 2022-04-25 18:39:35
+ */
+import React from "react"
+import Mp4Player from "./index"
+
+export default {
+    title: "Mp4Player"
+}
+
+export const WithMp4Player = () => {
+    <Mp4Player
+        controls={true}
+        autoPlay={true}
+        url="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo-720p.mp4"
+        style={{ width: '100%' }}
+    ></Mp4Player>
+}
