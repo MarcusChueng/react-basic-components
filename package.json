@@ -1,12 +1,19 @@
 {
-  "name": "react-basic-component",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "marcus-react-basic-component",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Own React component",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "typings": "build/types/packages/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "types": "build/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sb": "start-storybook --no-manager-cache  -p 6007",
-    "build:sb": "build-storybook .storybook -o docs"
+    "build:sb": "build-storybook .storybook -o docs",
+    "build": "rimraf build/* && rollup -c"
   },
   "author": "",
   "license": "ISC",
