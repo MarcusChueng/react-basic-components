@@ -21,7 +21,7 @@
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "package/**/*.{ts,tsx,less}":[
+    "package/**/*.{ts,tsx,less}": [
       "prettier --write"
     ]
   },
@@ -31,11 +31,9 @@
     }
   },
   "dependencies": {
-    "@types/react": "^16.14.14",
-    "@types/react-dom": "^16.9.14",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typescript": "^3.8.3"
+    "typescript": "3.8.3"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.0",
@@ -46,7 +44,9 @@
     "@storybook/addon-docs": "^6.4.14",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-knobs": "^6.4.0",
-    "@storybook/react": "^6.3.7",
+    "@storybook/react": "^6.4.16",
+    "@types/react": "^16.14.14",
+    "@types/react-dom": "^16.9.14",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
     "husky": "^4.3.0",

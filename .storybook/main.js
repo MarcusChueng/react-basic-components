@@ -4,12 +4,12 @@
  * @Author: MarcusCheung
  * @Date: 2022-04-19 00:02:32
  * @LastEditors: MarcusCheung
- * @LastEditTime: 2022-04-25 01:08:08
+ * @LastEditTime: 2022-06-03 23:04:42
  */
 const path = require("path")
 
 module.exports = {
-    stories: ["../packages/**/*.stories.tsx"],
+    stories: ["../packages/**/*.stories.(tsx|mdx)"],
     addons: [],
     webpackFinal: async (config) => {
         config.module.rules.push({
